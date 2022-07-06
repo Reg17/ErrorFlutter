@@ -16,6 +16,11 @@ class MyApp extends StatelessWidget {
         "Pagina Principal": ( _ ) => PaginaPrincipal(), // dentro de los parentesis deberia de estar el buildContext pero no se necesita
         "Pagina para detalles": ( _ )=> PaginaDetalles(),        
       },
+      theme: ThemeData.light().copyWith( // cabiamos el tema  para toda la app en el main
+        appBarTheme: const AppBarTheme( 
+          color: Colors.green
+        )
+      ), 
     );
   }
 }

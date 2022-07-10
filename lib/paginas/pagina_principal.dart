@@ -19,7 +19,7 @@ class PaginaPrincipal extends StatelessWidget {
       ),
       
       body:Column( // ponemos una columna para que los widgets de cartas esten una abajo de otra
-        children: const [
+        children:  [
           
           DeslizadorTarjetas()
   

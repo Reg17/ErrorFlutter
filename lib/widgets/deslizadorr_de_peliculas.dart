@@ -25,20 +25,28 @@ class DeslizadorPeliculas extends StatelessWidget {
             child: ListView.builder(
               scrollDirection: Axis.horizontal, // con esto ponemos la direccion a la que queremos el scroll
               itemCount: 20,
-              itemBuilder: (_, int index){
-                return Container( //1. el container no puede encontrar el tamaño para renderizar ya que la columna tiene un crossAxxis. lo envolvemos en un widget expanded para wue sea mas flexible
-                  width: 130,
-                  height: 190,
-                  color: Colors.green,
-                  margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                );
-              },
-              
-              ),
+              itemBuilder: (_, int index) => const _PosterPeliculas()
+            ),
           ),
         ],
       
       ),
     );
+  }
+}
+
+// dado que el widget container de la clase pricipal se esta haciendo grande separamos los archivos y tambien los podemos reutilizar en este archivo
+class _PosterPeliculas extends StatelessWidget { // lo dejamos en privado para que solo se ocupe en este archivo
+  const _PosterPeliculas({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container( //1. el container no puede encontrar el tamaño para renderizar ya que la columna tiene un crossAxxis. lo envolvemos en un widget expanded para wue sea mas flexible
+      width: 130,
+      height: 190,
+      color: Colors.green,
+      margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+    )
+    ;
   }
 }

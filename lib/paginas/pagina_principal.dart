@@ -26,7 +26,9 @@ class PaginaPrincipal extends StatelessWidget {
         children:  [
           
           DeslizadorTarjetas(),
-           DeslizadorPeliculas()
+          DeslizadorPeliculas(),
+          
+
   
         ],
 

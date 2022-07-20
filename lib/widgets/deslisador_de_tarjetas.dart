@@ -18,6 +18,7 @@ class DeslizadorTarjetas extends StatelessWidget{
 
       width: double.infinity,  // va a tomar todo al ancho posbile dependiendo en el padre (en este caso el padre es una columna)
       height: size.height * 0.5, // escogeos el 50% del alto del alto
+      color: Colors.white,
       child: Swiper( // este widget tiene las propiedades para el widget de deslizamiento de imagenes
       itemCount: 10, // la cantidad de tarjeta que se quiere manejar
       layout: SwiperLayout.STACK,
@@ -33,7 +34,7 @@ class DeslizadorTarjetas extends StatelessWidget{
             borderRadius: BorderRadius.circular(20), // 2. ponermos el tipi de ClipRRect que queremos y su tamaño
             child: const FadeInImage( // 1. con esto se hace una animacion de entrada a la pantalla // lo envovimos en un widget ClipRReact
               placeholder: AssetImage("assets/no-image.jpg"), 
-              image: NetworkImage("assets/640x360.png"),
+              image: NetworkImage("https://via.placeholder.com/300*340"),
               fit: BoxFit.cover, // el fit adapta la imagen al tamaño del contenedor
             ),
           ),

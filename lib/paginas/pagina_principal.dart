@@ -10,8 +10,8 @@ class PaginaPrincipal extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Peliculas en Cines"),
-      elevation: 0, // modificacion de la elevacion // con el 0 lo dejamos sin elevacion y sin sombra
-      actions: [ // con las actions // ponemos opciones para botones y logos en la barra
+      elevation: 0, 
+      actions: [ 
         IconButton(
           icon: const Icon(Icons.search_outlined),
           onPressed: (){},
@@ -21,8 +21,8 @@ class PaginaPrincipal extends StatelessWidget {
       ),
       
 
-      body:  SingleChildScrollView(//2. el SingleChildScrollView permite hacer scroll // el SingleChildScrollView fue sacado de la columna
-        child: Column( //1.  ponemos una columna para que los widgets de cartas esten una abajo de otra // la columna fue envuelta en un SingleChildScrollView 
+      body:  SingleChildScrollView(
+        child: Column( 
         children:  [
           
           DeslizadorTarjetas(),

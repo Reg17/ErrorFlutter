@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
       title: "Películas",
       initialRoute: "Pagina Principal",
       routes: {
-        "Pagina Principal": ( _ ) => PaginaPrincipal(), // dentro de los parentesis deberia de estar el buildContext pero no se necesita
+        "Pagina Principal": ( _ ) => PaginaPrincipal(), 
         "Pagina para detalles": ( _ )=> PaginaDetalles(),        
       },
-      theme: ThemeData.light().copyWith( // cabiamos el tema  para toda la app en el main
+      theme: ThemeData.light().copyWith( 
         appBarTheme: const AppBarTheme( 
           color: Colors.green
         )

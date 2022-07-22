@@ -1,16 +1,12 @@
 # peliculas
 
-A new Flutter project.
+Este projecto fue sacadode un tutorial de flutter.
 
-## Getting Started
+Este presenta los siguientes errores.
 
-This project is a starting point for a Flutter application.
+En el emulador de android no puede iniciar completamente la aplicacion.
 
-A few resources to get you started if this is your first Flutter project:
+![git android](https://user-images.githubusercontent.com/95203872/180354522-3bc5b5e3-d202-4ebb-b8dc-8fbbbbbbc8c8.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Al poner el emulador de chrome la aplicacion inicia pero el scroll solo funciona en la parte superior, ademas de esto![Screenshot from 2022-07-21 21-14-15](https://user-images.githubusercontent.com/95203872/180354997-68b451a7-2f98-4799-8c7a-527228570f3f.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

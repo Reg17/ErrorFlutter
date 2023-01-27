@@ -1,6 +1,6 @@
 # peliculas
 
-Este projecto fue sacadode un tutorial de flutter.
+
 
 Este presenta los siguientes errores.
 
